@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #313640;
+}
+
+header {
+    width: 100vw;
+    background: #313640 url('sushi.png') center no-repeat ;
+    background-size:cover;
+    height: 400px;
+}
+
+button > img , p {
+    display: inline-block;
+}
+
+button > img {
+    background-color: #F2CA99;
+    padding: 5px 7px 5px 7px;
+    height: 45px;
+}
+
+button {
+    width: 100px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+}
+
+.direita {
+    float: right;
+    width: 150px;
+}
