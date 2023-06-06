@@ -60,7 +60,7 @@ a:hover{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%; 
     grid-template-rows: 15vh 15vh;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .destaque1 {
@@ -139,4 +139,29 @@ a:hover{
 .products6 {
     background: #262a31;
     grid-column: 3/4;
+}
+
+footer {
+    display: grid;
+    justify-items:start;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    height: 200px;
+    width: 100%;
+    background-color: #262a31;
+}
+
+.logo > img {
+    grid: 1/2;
+    width: 100px;
+    display: block;
+}
+
+.menufooter > ul > li{
+
+    display: inline-block;
+}
+
+.menufooter{
+    grid: 2/3;
 }
