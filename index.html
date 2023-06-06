@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Magic Sushi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -9,16 +9,33 @@
   </head>
   <body>
     <header>
-      <nav>
-        <button class="esquerda">
-          <img src="menu-hamburguer (1).png" alt="">
-          <p>MENU</p>
-        </button>
-        <button class="direita">
-          <img src="menu-hamburguer (1).png" alt="">
-          <p>CONTACT</p>
-        </button>
-      </nav>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Magic Sushi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><img src="menu-hamburguer (1).png" alt=""></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cardapio</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Nigiri</a>
+              <a class="dropdown-item" href="#">Maki</a>
+              <a class="dropdown-item" href="#">Uramaki</a>
+              <a class="dropdown-item" href="#">Temaki</a>
+              <a class="dropdown-item" href="#">Gunkan Maki</a>
+              <a class="dropdown-item" href="#">Hot Roll</a>
+              <a class="dropdown-item" href="#">Sashimi</a>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
     </header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -59,7 +76,11 @@
       </a>
     </div>
     <div class="container">
-      <div class="destaque1"></div>
+      <div class="destaque1 imgcama">
+        <h1>Frutos do Mar</h1>
+        <img src="camarao.png" alt="camarão">
+
+      </div>
       <div class="destaque2"></div>
       <div class="destaque3"></div>
       <div class="destaque4"></div>
