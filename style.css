@@ -8,16 +8,13 @@
 }
 
 body, html {
-    width: 100vw;
-    height: 100vh;
+    scroll-behavior: smooth;
     background-color: #313640;
-    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-    width: 100vw;
-    background: #313640 url('sushi.png') center no-repeat ;
+header{
+    background: #313640 url('imagens/sushi.png') center no-repeat ;
     background-size:cover;
     height: 420px;
 }
@@ -63,21 +60,34 @@ a:hover{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%; 
     grid-template-rows: 15vh 15vh;
+    margin-bottom: 20px;
 }
 
 .destaque1 {
-    background: #8C0303;
+    background: #8C0303 url('imagens/camarao.jpg') center bottom no-repeat;
+    background-size: cover;
     grid-column: 1/3;
 }
+
+.destaque1 > p, h3 {
+    text-align: start;
+    padding: 5px;
+    color: white;
+    background-color: #31364056;
+    font-size: 2vh;
+}
+
 .destaque2 {
     background: #D90404;
     grid-column: 3/4;
 }
 
 .destaque3 {
-    background: #400101;
+    background: #400101 url("imagens/sushi-retrato.jpg");
+    background-size: cover;
     grid-column: 4/5;
     grid-row: 1/3;
+
 }
 
 .destaque4 {
@@ -86,11 +96,47 @@ a:hover{
 }
 
 .destaque5 {
-    background: #777A8C;
+    background: #777A8C url('imagens/hot.jpg');
+    background-size: cover;
     grid-column: 2/4;
 }
 
 .imgcama > img {
     width: 50px;
     mix-blend-mode: multiply;
+}
+
+.grid2 {
+    width: 80%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%; 
+    grid-template-rows: 200px 200px;
+    gap: 5% ;
+    margin: auto;
+}
+
+.products1 {
+    background: #262a31;
+    grid-column: 1/2;
+}
+.products2 {
+    background: #262a31;
+    grid-column: 2/3;
+}
+.products3 {
+    background: #262a31;
+    grid-column: 3/4;
+}
+.products4 {
+    background: #262a31;
+    grid-column: 1/2;
+}
+.products5 {
+    background: #262a31;
+    grid-column: 2/3;
+}
+.products6 {
+    background: #262a31;
+    grid-column: 3/4;
 }
