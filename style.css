@@ -21,17 +21,29 @@ header{
 
 nav {
     background-color: #31364070;
+    backdrop-filter: blur(3px);
+}
+
+h2:hover {
+    background: transparent;
 }
 
 a {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
 }
 
 a:hover{
     color: #8C0303;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 4px;
+    transform: translate(5px);
+    transition: 0.5s;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.349);
 }
-
 
 .dropdown-menu {
     background-color: #3136405b;
@@ -42,11 +54,6 @@ a:hover{
 }
 .btns {
     display: grid;
-}
-
-.direita {
-    float: right;
-    width: 150px;
 }
 
 .carousel-item {
@@ -61,18 +68,31 @@ a:hover{
     top: -10px;
 }
 
-.classificaçao > ul > li > img{
+.classificaçao1 > ul > li > img{
     position: relative;
     top: -40px;
 }
 
 .classificaçao > ul{
     margin: 0;
+    position: relative;
+    top: -40px;
 }
 
-.preco {
+.classificaçao > ul > li {
+    display: inline-block;
+}
+
+.classificaçao1 > ul > li {
+    display: inline-block;
+}
+
+.classificaçao1 {
     position: relative;
-    top: -10px;
+    top: -100px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -100,10 +120,12 @@ a:hover{
 .destaque2 {
     background: #D90404;
     grid-column: 3/4;
+    background: #400101 url("imagens/sushi2.jpg") bottom no-repeat;
+    background-size: cover;
 }
 
 .destaque3 {
-    background: #400101 url("imagens/sushi-retrato.jpg");
+    background: #400101 url("imagens/sushi-retrato.jpg") bottom;
     background-size: cover;
     grid-column: 4/5;
     grid-row: 1/3;
@@ -113,6 +135,8 @@ a:hover{
 .destaque4 {
     background: #F29F05;
     grid-column: 1/2;
+    background: #400101 url("imagens/sushi3.jpg") bottom;
+    background-size: cover;
 }
 
 .destaque5 {
@@ -127,43 +151,76 @@ a:hover{
 }
 
 .grid2 {
-    width: 80%;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 30% 30% 30%; 
+    grid-template-columns: 40% 40%; 
     grid-template-rows: 200px 200px;
     gap: 5% ;
-    margin: auto;
+    row-gap: 100px;
+    position: relative;
+    justify-content: center;
 }
 
 .products1 {
     background: #262a31;
     grid-column: 1/2;
+    grid-row: 1/2;
 }
+
 .products2 {
     background: #262a31;
     grid-column: 2/3;
+    grid-row: 1/2;
 }
 .products3 {
     background: #262a31;
-    grid-column: 3/4;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 .products4 {
     background: #262a31;
-    grid-column: 1/2;
-}
-.products5 {
-    background: #262a31;
     grid-column: 2/3;
-}
-.products6 {
-    background: #262a31;
-    grid-column: 3/4;
+    grid-row: 2/3;
 }
 
-.classificaçao > ul > li {
-    display: inline-block;
+
+.cardapioProd > img {
+    position: relative;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 5px;
 }
+
+.nome_prato {
+    text-align: center;
+    position: relative;
+    top: -110px;
+    margin: 5px;
+    font-size: 1.2em;    
+}
+
+.precoabaixo {
+    position: relative;
+    top: -150px;
+    text-align: center;
+}
+
+.carrinho {
+    background-color: rgb(20, 20, 20);
+    height: 40px;
+    width: 150px;
+    position: relative;
+    top: -160px;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+}
+
+.material-symbols-outlined {
+    vertical-align: bottom;
+}
+
 
 footer {
     display: grid;
