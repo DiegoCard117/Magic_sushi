@@ -196,11 +196,12 @@ a#divisa {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 40% 40%; 
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
     gap: 5% ;
     row-gap: 100px;
     position: relative;
     justify-content: center;
+    margin-bottom: 200px;
 }
 
 .products1 {
@@ -214,39 +215,41 @@ a#divisa {
 }
 
 .products2 {
-    background: #262a31;
     grid-column: 2/3;
     grid-row: 1/2;
 }
 .products3 {
-    background: #262a31;
     grid-column: 1/2;
     grid-row: 2/3;
 }
 .products4 {
-    background: #262a31;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-.desktopDestaque3 {
+.products5 {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.products6 {
+    display: block;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.products7 {
     display: none;
 }
 
-.desktopDestaque2 {
-    display: none;
-}
-
-.desktopDestaque1 {
-    display: none;
-}
-
-.desktopDestaque {
+.products8{
     display: none;
 }
 
 .cardapioProd {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.788);
+    background: #262a31;
 }
 
 .cardapioProd:hover{
@@ -300,12 +303,10 @@ a#divisa {
     vertical-align: bottom;
 }
 
-
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 80px;
-    margin-top: 200px;
     height: 380px;
     width: 100%;
     background-color: #262a31;
