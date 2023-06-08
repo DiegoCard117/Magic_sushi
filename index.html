@@ -12,43 +12,46 @@
   </head>
   <body>
     <header>
-      <div class="backDesktop"></div>
-      <div class="mobileDesktop">
-        <a name="topo"></a>
-        <nav class="navbar navbar-expand-lg fixed-top">
-          <img src="imagens/logo-white.png" alt="" width=50px>
-          <button onclick="focar()" class="navbar-toggler" type="button" id="btn" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><img src="imagens/menu-hamburguer (1).png" alt="menu">
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#topo">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cardapio</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Nigiri</a>
-                  <a class="dropdown-item" href="#">Maki</a>
-                  <a class="dropdown-item" href="#">Uramaki</a>
-                  <a class="dropdown-item" href="#">Temaki</a>
-                  <a class="dropdown-item" href="#">Gunkan Maki</a>
-                  <a class="dropdown-item" href="#">Hot Roll</a>
-                  <a class="dropdown-item" href="#">Sashimi</a>
-                </div>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contato</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Carrinho</a>
-                </li>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <div class="titulo">
+        <h1>Magic Sushi</h1>
+        <h2>Japanese Food</h2>
+        <p>Bem-vindo ao nosso site de comida japonesa, onde você encontrará uma experiência culinária autêntica do Japão. Navegue por nosso cardápio diversificado.</p>
+        <p class="desktopP"> Repleto de pratos tradicionais e contemporâneos que irão satisfazer os seus desejos gastronômicos. Dos deliciosos sushis e sashimis frescos aos pratos quentes como o ramen e o tempurá crocante.</p>
       </div>
+      <a name="top"></a>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <img src="imagens/logo-white.png" alt="" width=50px>
+        <button onclick="focar()" class="navbar-toggler" type="button" id="btn" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><img src="imagens/menu-hamburguer (1).png" alt="menu">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"><!--Menu Dropdown-->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#top">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cardapio</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Hot Roll</a>
+                <a class="dropdown-item" href="#">Maki</a>
+                <a class="dropdown-item" href="#">Uramaki</a>
+                <a class="dropdown-item" href="#">Temaki</a>
+                <a class="dropdown-item" href="#">Gunkan Maki</a>
+                <a class="dropdown-item" href="#">Nigiri</a>
+                <a class="dropdown-item" href="#">Sashimi</a>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Carrinho</a>
+              </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <section onclick="sair()">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"><!--itens no carrosel-->
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -57,8 +60,8 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="imagens/prato1.png" alt="" width="170px"><br>
-              <p>Prato de Sushi</p><br>
+              <img src="imagens/Yaki1.png" alt="" width="170px"><br>
+              <p>Yakisoba de Carne e Frango</p><br>
               <div class="classificaçao">
                 <ul>
                   <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -71,8 +74,8 @@
               <p class="preco">R$ 9,95</p>
             </div>
             <div class="carousel-item">
-              <img src="imagens/prato1.png" alt="" width="170px"><br>
-              <p>Prato de Sushi</p><br>
+              <img src="imagens/Yakisoba-Salmon.png" alt="" width="170px"><br>
+              <p>Yakisoba Salmon</p><br>
               <div class="classificaçao">
                 <ul>
                   <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -85,8 +88,8 @@
               <p class="preco">R$ 9,95</p>
             </div>
             <div class="carousel-item">
-              <img src="imagens/prato1.png" alt="" width="170px"><br>
-              <p>Prato de Sushi</p><br>
+              <img src="imagens/guioza.png" alt="" width="170px"><br>
+              <p>Guioza Suina</p><br>
               <div class="classificaçao">
                 <ul>
                   <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -99,8 +102,8 @@
               <p class="preco">R$ 9,95</p>
             </div>
             <div class="carousel-item">
-              <img src="imagens/prato1.png" alt="" width="170px"><br>
-              <p>Prato de Sushi</p><br>
+              <img src="imagens/tempura.png" alt="" width="170px"><br>
+              <p>Tempurá de camarão</p><br>
               <div class="classificaçao">
                 <ul>
                   <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -121,21 +124,21 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Próximo</span>
             </a>
-      </div>
-      <div class="container">
-        <div class="destaque1 imgcama">
+      </div><!--destaques em grid-->
+      <div class="container" >
+        <div class="destaque1 imgcama child">
           <h3>Frutos do Mar</h3>
           <p>Camarão Grelhado</p>
         </div>
-        <div class="destaque2"></div>
-        <div class="destaque3"><h3>Sushi Exclusivo</h3></div>
-        <div class="destaque4"></div>
-        <div class="destaque5"><h3>Hot Sushi</h3></div>
+        <div class="destaque2 child"></div>
+        <div class="destaque3 child"><h3>Sushi Exclusivo</h3></div>
+        <div class="destaque4 child"></div>
+        <div class="destaque5 child"><h3>Hot Sushi</h3></div>
       </div>
       <div class="grid2">
-        <div class="products1 cardapioProd">
-          <img src="imagens/prato1.png" alt="" width=180px>
-          <p class="nome_prato">Prato de Sushi</p><br>
+        <div class="products1 cardapioProd"><!--Nigiri-->
+          <img src="imagens/nigiri1.png" alt="" width=180px>
+          <p class="nome_prato">Nigiri Set</p><br>
           <div class="classificaçao1">
             <ul>
               <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -148,9 +151,9 @@
           <p class="precoabaixo">R$ 9,95</p>
           <button class="carrinho"><span class="material-symbols-outlined">add</span>ADD TO CART</button>
         </div>
-        <div class="products2 cardapioProd">
+        <div class="products2 cardapioProd"><!--Sushi-->
           <img src="imagens/prato1.png" alt="" width=180px>
-          <p class="nome_prato">Prato de Sushi</p><br>
+          <p class="nome_prato">Sushi Set</p><br>
           <div class="classificaçao1">
             <ul>
               <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -163,9 +166,9 @@
           <p class="precoabaixo">R$ 9,95</p>
           <button class="carrinho"><span class="material-symbols-outlined">add</span>ADD TO CART</button>
         </div>
-        <div class="products3 cardapioProd">
-          <img src="imagens/prato1.png" alt="" width=180px>
-          <p class="nome_prato">Prato de Sushi</p><br>
+        <div class="products3 cardapioProd"><!--Hot Roll-->
+          <img src="imagens/hot-roll.png" alt="" width=180px>
+          <p class="nome_prato">Hot Roll</p><br>
           <div class="classificaçao1">
             <ul>
               <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -178,9 +181,9 @@
           <p class="precoabaixo">R$ 9,95</p>
           <button class="carrinho"><span class="material-symbols-outlined">add</span>ADD TO CART</button>
         </div>
-        <div class="products4 cardapioProd">
-          <img src="imagens/prato1.png" alt="" width=180px>
-          <p class="nome_prato">Prato de Sushi</p><br>
+        <div class="products4 cardapioProd"><!--sashimi-->
+          <img src="imagens/Sashimi.png" alt="" width=180px>
+          <p class="nome_prato">Sashimi Salmone</p><br>
           <div class="classificaçao1">
             <ul>
               <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -193,9 +196,9 @@
           <p class="precoabaixo">R$ 9,95</p>
           <button class="carrinho"><span class="material-symbols-outlined">add</span>ADD TO CART</button>
         </div>
-        <div class="products4 cardapioProd desktopDestaque">
-          <img src="imagens/prato1.png" alt="" width=180px>
-          <p class="nome_prato">Prato de Sushi</p><br>
+        <div class="products4 cardapioProd desktopDestaque"><!--Temaki-->
+          <img src="imagens/temaki.png" alt="" width=180px>
+          <p class="nome_prato">Okonomiyaki Temaki</p><br>
           <div class="classificaçao1">
             <ul>
               <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -208,9 +211,9 @@
           <p class="precoabaixo">R$ 9,95</p>
           <button class="carrinho"><span class="material-symbols-outlined">add</span>ADD TO CART</button>
         </div>
-        <div class="products4 cardapioProd desktopDestaque1">
-          <img src="imagens/prato1.png" alt="" width=180px>
-          <p class="nome_prato">Prato de Sushi</p><br>
+        <div class="products4 cardapioProd desktopDestaque1"><!--Veggie Maki-->
+          <img src="imagens/veggie-maki.png" alt="" width=180px>
+          <p class="nome_prato"> Veggie Maki</p><br>
           <div class="classificaçao1">
             <ul>
               <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -223,8 +226,8 @@
           <p class="precoabaixo">R$ 9,95</p>
           <button class="carrinho"><span class="material-symbols-outlined">add</span>ADD TO CART</button>
         </div>
-        <div class="products4 cardapioProd desktopDestaque2">
-          <img src="imagens/prato1.png" alt="" width=180px>
+        <div class="products4 cardapioProd desktopDestaque2"><!--Uramaki-->
+          <img src="imagens/uramaki1.png" alt="" width=180px>
           <p class="nome_prato">Prato de Sushi</p><br>
           <div class="classificaçao1">
             <ul>
@@ -239,8 +242,8 @@
           <button class="carrinho"><span class="material-symbols-outlined">add</span>ADD TO CART</button>
         </div>
         <div class="products4 cardapioProd desktopDestaque3">
-          <img src="imagens/prato1.png" alt="" width=180px>
-          <p class="nome_prato">Prato de Sushi</p><br>
+      <img src="imagens/gukan.png" alt="" height=180px>
+          <p class="nome_prato">Gukan Epi </p><br>
           <div class="classificaçao1">
             <ul>
               <li><img src="imagens/estrela (1).png" alt="" width=15px></li>
@@ -251,7 +254,7 @@
             </ul>
           </div>
           <p class="precoabaixo">R$ 9,95</p>
-          <button class="carrinho"><span class="material-symbols-outlined">add</span>ADD TO CART</button>
+          <button class="carrinho"><span class="material-symbols-outlined">add</span>ADD TO CART</button> 
         </div>
       </div>
     </section>
@@ -259,7 +262,6 @@
       <div class="logo"><img src="imagens/logo-white.png" alt=""></div>
       <div class="menufooter">
         <ul>
-          <li><a href="#topo">Home</a></li>
           <li><a href="">Sobre nós</a></li>
           <li><a href="">Contato</a></li>
           <li><a href="">Delivery</a></li>
