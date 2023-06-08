@@ -1,5 +1,5 @@
 # Magic_sushi
- Recriando design de um site de sushi
- Site criado para treinamento usando um pouco de Bootstrap 4
+ <p>Recriando design de um site de sushi</p>
+<p>Site criado para treinamento usando um pouco de Bootstrap 4</p>
  
-Link <a href="https://diegocard117.github.io/Magic_sushi/">Clique Aqui</a>
+<a href="https://diegocard117.github.io/Magic_sushi/">Magic Sushi 🍣</a>
