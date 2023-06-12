@@ -17,7 +17,7 @@ body, html {
 }
 
 header{
-    background: #313640 url('imagens/sushi.png') center no-repeat ;
+    background: #313640 url('/imagens/backgrounds/sushi.png') center no-repeat ;
     background-size:cover;
     height: 420px;
 }
@@ -99,6 +99,10 @@ a:hover{
     top: -10px;
 }
 
+.carousel-item > img{
+    filter: drop-shadow(-7px 17px 7px rgba(0, 0, 0, 0.418));
+}
+
 .carousel-control-prev:hover {
     transform: translate(-8px);
 }
@@ -146,7 +150,7 @@ a#divisa {
 }
 
 .destaque1 {
-    background: #8C0303 url('imagens/camarao.jpg') center bottom no-repeat;
+    background: #8C0303 url('/imagens/backgrounds/camarao.jpg') center bottom no-repeat;
     background-size: cover;
     grid-column: 1/3;
 }
@@ -162,27 +166,26 @@ a#divisa {
 .destaque2 {
     background: #D90404;
     grid-column: 3/4;
-    background: #400101 url("imagens/sushi2.jpg") bottom no-repeat;
+    background: #400101 url("/imagens/backgrounds/sushi2.jpg") bottom no-repeat;
     background-size: cover;
 }
 
 .destaque3 {
-    background: #400101 url("imagens/sushi-retrato.jpg") bottom;
+    background: #400101 url("/imagens/backgrounds/sushi-retrato.jpg") center bottom;
     background-size: cover;
     grid-column: 4/5;
     grid-row: 1/3;
-
 }
 
 .destaque4 {
     background: #F29F05;
     grid-column: 1/2;
-    background: #400101 url("imagens/sushi3.jpg") bottom;
+    background: #400101 url("/imagens/backgrounds/sushi3.jpg") center bottom no-repeat;
     background-size: cover;
 }
 
 .destaque5 {
-    background: #777A8C url('imagens/hot.jpg');
+    background: #777A8C url('/imagens/backgrounds/hot.jpg');
     background-size: cover;
     grid-column: 2/4;
 }
@@ -265,6 +268,7 @@ a#divisa {
     left: 50%;
     transform: translate(-50%);
     margin-bottom: 5px;
+    filter: drop-shadow(-14px 17px 7px rgba(0, 0, 0, 0.418));
 }
 
 .nome_prato {
@@ -364,7 +368,7 @@ footer {
 @media screen and (min-width:1255px) {
 
     header {
-        background: url('imagens/desktWall.jpg') center;
+        background: url('/imagens/backgrounds/desktWall.jpg') center;
         background-size: contain;
         height: 600px;
     }
