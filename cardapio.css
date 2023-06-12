@@ -219,10 +219,31 @@ a:hover{
 
 .acompanhamentos {
     position: relative;
-    top: -25%;
-    padding: 10px;
+    top: -30%;
+    left: 30%;
+    padding: 15px;
 }
 
+.acompanhamentos input {
+    display: none;
+}
+
+.acompanhamentos input + label:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: #F29F05;
+    display: inline-block;
+    border: 1px solid white;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+.acompanhamentos input:checked + label:before {
+    background-color: #400101;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAhElEQVR4nNXPMQrCYBCE0R9BrCy1Ukut7S1ygRR2gngBITeIF9AD2ImNkKt4qicBQQtD4haC0yy7wzfspPQ3whzDCNhHhUEELrGKgAscI2APt2jXAnmTOca2wZvh3Ja+x+HD/YJRl/fWONUdn/sOm1YwvQIyXDGpZ2fwLWCJO6Zfwz/RA1FjcF9/MZnFAAAAAElFTkSuQmCC');
+}
 
 .carrinho {
     background-color: rgb(20, 20, 20);
