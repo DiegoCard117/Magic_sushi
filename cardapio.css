@@ -16,12 +16,6 @@ body, html {
     overflow-x: hidden;
 }
 
-header{
-    background: #313640 url('imagens//backgrounds/sushi.png') center no-repeat ;
-    background-size:cover;
-    height: 420px;
-}
-
 .titulo {
     position: absolute;
     top: 65px;
@@ -233,7 +227,7 @@ a:hover{
     width: 18px;
     height: 18px;
     border-radius: 4px;
-    background-color: #F29F05;
+    background-color: #313640;
     display: inline-block;
     border: 1px solid white;
     vertical-align: sub;
@@ -241,7 +235,7 @@ a:hover{
 }
 
 .acompanhamentos input:checked + label:before {
-    background-color: #400101;
+    background-color: #708C69;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAhElEQVR4nNXPMQrCYBCE0R9BrCy1Ukut7S1ygRR2gngBITeIF9AD2ImNkKt4qicBQQtD4haC0yy7wzfspPQ3whzDCNhHhUEELrGKgAscI2APt2jXAnmTOca2wZvh3Ja+x+HD/YJRl/fWONUdn/sOm1YwvQIyXDGpZ2fwLWCJO6Zfwz/RA1FjcF9/MZnFAAAAAElFTkSuQmCC');
 }
 
@@ -326,12 +320,6 @@ footer {
 
 @media screen and (min-width:1255px) {
 
-    header {
-        background: url('imagens/backgrounds/desktWall.jpg') center;
-        background-size: contain;
-        height: 600px;
-    }
-
     .titulo {
         top: 100px;
         width: 400px;
@@ -367,13 +355,53 @@ footer {
         background: none;
     }
 
+    .acompanhamentos > label {
+        display: inline-block;
+        vertical-align: baseline;
+    }
+
+    .acompanhamentos > form > p {
+        display: block;
+    }
+
+    .acompanhamentos {
+        left: 2%;
+        top: -100px;
+    }
+
+    .acompanhamentos_form {
+        font-size: 2em;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        
+    }
+
+    .shoyu {
+        grid-column: 1/2;
+    }
+
+    .nori {
+        grid-column: 2/3;
+    }
+
+    .Wakame {
+        grid-column: 3/4;
+    }
+
+    .konbu {
+        grid-column: 4/5;
+    }
+
+    .Wasabi {
+        grid-column: 5/6;
+    }
+
     .container {
         grid-template-rows: 300px 300px;
     }
 
-
     .carrinho{
-        top: -135px;
+        top: 114px;
     }
 
     .carrinho:hover {

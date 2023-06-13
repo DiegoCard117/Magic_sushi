@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Magic Sushi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="imagens/icon.logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../cardapio.css">
+    <style>
+      header {
+        background: #313640 url('../imagens/backgrounds/hotroll.jpg') center no-repeat ;
+        background-size:cover;
+        height: 420px;
+      }
+
+    @media screen and (min-width:1255px) {
+
+      header {
+          background: url('../imagens/backgrounds/desktWall.jpg') center;
+          background-size: contain;
+          height: 600px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="titulo" >
+        <h1>Hot Roll</h1>
+        <h2>Japanese Food</h2>
+        <p>Bem-vindo ao nosso site de comida japonesa, onde você encontrará uma experiência culinária autêntica do Japão. Navegue por nosso cardápio diversificado.</p>
+        <p class="desktopP"> Repleto de pratos tradicionais e contemporâneos que irão satisfazer os seus desejos gastronômicos. Dos deliciosos sushis e sashimis frescos aos pratos quentes como o ramen e o tempurá crocante.</p>
+      </div>
+      <a name="top"></a>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <img src="../imagens/icones/logo-white.png" alt="" width=50px>
+        <button onclick="focar()" class="navbar-toggler" type="button" id="btn" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><img src="../imagens/icones/menu-hamburguer(1).png" alt="menu">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"><!--Menu Dropdown-->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" href="#top">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cardapio</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="hotroll.html">Hot Roll</a>
+                <a class="dropdown-item" href="maki.html">Maki</a>
+                <a class="dropdown-item" href="uramaki.html">Uramaki</a>
+                <a class="dropdown-item" href="temaki.html">Temaki</a>
+                <a class="dropdown-item" href="gukan.html">Gunkan Maki</a>
+                <a class="dropdown-item" href="nigiri.html">Nigiri</a>
+                <a class="dropdown-item" href="sashimi.html">Sashimi</a>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Carrinho</a>
+              </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container" onclick="sair()">
+        <div class="destaque1 imgcama child">
+          <h3>Frutos do Mar</h3>
+          <p>Camarão Grelhado</p>
+        </div>
+        <div class="destaque2 child"></div>
+        <div class="destaque3 child"><h3>Sushi Exclusivo</h3></div>
+        <div class="destaque4 child"></div>
+        <div class="destaque5 child"><h3>Hot Sushi</h3></div>
+      </div>
+      <div class="grid2">
+        
+        <div class="products3 cardapioProd"><!--Hot Roll-->
+          <img src="../imagens/pratos/hot-roll.png" alt="" width=180px>
+          <p class="nome_prato">Hot Roll</p><br>
+          <div class="classificaçao1">
+            <ul>
+              <li><img src="../imagens/icones/estrela (1).png" alt="" width=15px></li>
+              <li><img src="../imagens/icones/estrela (1).png" alt="" width=15px></li>
+              <li><img src="../imagens/icones/estrela (1).png" alt="" width=15px></li>
+              <li><img src="../imagens/icones/estrela (1).png" alt="" width=15px></li>
+              <li><img src="../imagens/icones/estrela (1).png" alt="" width=15px></li>
+            </ul>
+          </div>
+          <p class="precoabaixo">R$ 9,95</p>
+          <button class="carrinho">PEDIR</button>
+          <div class="acompanhamentos">
+            <form class="acompanhamentos_form">
+                <div class="shoyu">
+                  <input type="checkbox" name="shoyu" id="shoyu">
+                  <label for="shoyu">Shoyu</label>
+                </div>
+                <div class="nori">
+                  <input type="checkbox" name="Nori" id="Nori">
+                  <label for="Nori">Nori</label>
+                </div>
+                <div class="Wakame">
+                  <input type="checkbox" name="Wakame" id="Wakame">
+                  <label for="Wakame">Wakame</label>
+                </div>
+                <div class="konbu">
+                  <input type="checkbox" name="Konbu" id="Konbu" class="konbu">
+                  <label for="Konbu">Konbu</label>
+                </div>
+                <div class="wasabi">
+                  <input type="checkbox" name="Wasabi" id="Wasabi">
+                  <label for="Wasabi">Wasabi</label>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer onclick="sair()">
+      <div class="logo"><img src="../imagens/icones/logo-white.png" alt=""></div>
+      <div class="menufooter">
+        <ul>
+          <li><a href="">Sobre nós</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Delivery</a></li>
+        </ul>
+      </div>
+      <div class="footer2">
+        <ul>
+          <li><a href=""><img class="rodapeimg" src="../imagens/icones/facebook (1).png" alt="facebook"></a></li>
+          <li><a href=""><img class="rodapeimg" src="../imagens/icones/instagram (1).png" alt="instagram"></a></li>
+          <li><a href=""><img class="rodapeimg" src="../imagens/icones/whatsapp.png" alt="whatsapp"></a></li>
+          <li><a href=""><img class="rodapeimg" src="../imagens/icones/twitter.png" alt="twitter"></a></li>
+        </ul>
+      </div>
+    </footer>
+    
+    <!-- Optional JavaScript -->
+    <script>
+      function focar() {
+        if (document.documentElement.style.overflow = 'scroll'){
+          document.documentElement.style.overflow = 'hidden'
+        } else {
+          document.documentElement.style.overflow = 'scroll'
+        }
+      }
+
+      function sair() {
+        if (document.documentElement.style.overflow = 'hidden'){
+          document.documentElement.style.overflowY = 'scroll'
+        }
+      }
+
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
