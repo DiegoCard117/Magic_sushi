@@ -368,7 +368,7 @@ footer {
 @media screen and (min-width:1255px) {
 
     header {
-        background: url('/imagens/backgrounds/desktWall.jpg') center;
+        background: url('imagens/backgrounds/desktWall.jpg') center;
         background-size: contain;
         height: 600px;
     }
