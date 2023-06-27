@@ -22,6 +22,10 @@ header{
     height: 420px;
 }
 
+.menuhidden {
+    overflow-x: hidden;
+}
+
 .titulo {
     position: absolute;
     top: 65px;
